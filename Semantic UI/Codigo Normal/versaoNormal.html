@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sô Agenor - Inclusão Digital</title>
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho e menu de navegação -->
+    <header>
+        <nav class="menu">
+            <div class="menu-header">🌐 Sô Agenor</div>
+            <!-- Links que alternam entre as abas -->
+            <a class="menu-item" onclick="mostrarAba('introducao')">Introdução</a>
+            <a class="menu-item" onclick="mostrarAba('problemas')">Problemas</a>
+            <a class="menu-item" onclick="mostrarAba('solucoes')">Soluções</a>
+            <a class="menu-item" onclick="mostrarAba('simulacao')">Simulação</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container">
+        <!-- Aba: Introdução -->
+        <section id="introducao" class="tab-content active">
+            <h2>Bem-vindo ao Sô Agenor</h2>
+            <div class="segment">
+                <!-- Texto explicativo sobre o Sô Agenor -->
+                <p>Sô Agenor é mais que um assistente virtual: é um aliado na inclusão digital para idosos.</p>
+                <p>Com ele, usuários enfrentam menos barreiras tecnológicas, acessam recursos digitais de forma simples e personalizada.</p>
+                <div class="segment">
+                    <!-- Imagem representativa do Sô Agenor -->
+                    <img src="C:\Users\vinic\Downloads\So Agenor.png" alt="Ícone do Sô Agenor" class="icone-centralizado">
+                    <p>Este é o Sô Agenor, seu guia na era digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba: Problemas -->
+        <section id="problemas" class="tab-content">
+            <h2>Problemas Enfrentados</h2>
+            <div class="segment">
+                <!-- Lista de problemas enfrentados pelos idosos -->
+                <p>Muitos idosos enfrentam barreiras ao usar dispositivos digitais. Estas são algumas das dificuldades mais comuns:</p>
+                <ul class="lista">
+                    <li><strong>Dificuldades Visuais:</strong> Textos pequenos e baixo contraste tornam a navegação difícil.</li>
+                    <li><strong>Limitações Motoras:</strong> Interfaces pequenas dificultam interações precisas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Aba: Soluções -->
+        <section id="solucoes" class="tab-content">
+            <h2>Soluções Propostas</h2>
+            <div class="segment">
+                <!-- Lista de soluções implementadas pelo Sô Agenor -->
+                <p>O Sô Agenor foi criado para enfrentar essas dificuldades com soluções práticas e acessíveis:</p>
+                <ul class="lista">
+                    <li><strong>Ajuste de Tamanhos:</strong> Botões para aumentar textos e ícones, garantindo maior visibilidade.</li>
+                    <li><strong>Contraste Personalizável:</strong> Modos de alto contraste para melhorar a leitura.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Aba: Simulação -->
+        <section id="simulacao" class="tab-content">
+            <h2>Simulação de Interface</h2>
+            <div class="segment">
+                <!-- Botões para interagir com o texto e ícones -->
+                <p>Veja como o Sô Agenor facilita a navegação:</p>
+                <div class="botoes">
+                    <button onclick="ajustarTexto('+')">Aumentar Texto</button>
+                    <button onclick="ajustarTexto('-')">Diminuir Texto</button>
+                    <button onclick="ajustarIcones('+')">Aumentar Ícones</button>
+                    <button onclick="ajustarIcones('-')">Diminuir Ícones</button>
+                </div>
+                <div class="simulacao">
+                    <!-- Elementos interativos -->
+                    <p id="texto-exemplo">Texto ajustável</p>
+                    <img id="icone-exemplo" src="C:\Users\vinic\Downloads\So Agenor.png" alt="Ícone do Sô Agenor" style="width: 100px;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé fixado no final da página -->
+    <footer class="rodape">
+        <p>&copy; 2024 Sô Agenor - Inclusão Digital para Todos</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

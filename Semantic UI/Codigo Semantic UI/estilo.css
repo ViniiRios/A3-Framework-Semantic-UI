@@ -1,0 +1,46 @@
+/* Estilo Geral */
+body {
+    background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    flex: 1;
+    margin-top: 50px;
+}
+
+/* Menu */
+.gradient-menu {
+    background: linear-gradient(to right, #4facfe, #00f2fe) !important;
+    border-radius: 10px; 
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1b1c1d;
+    color: white;
+    border-radius: 10px; 
+}
+
+/* Centralização e Ajustes */
+.center.aligned {
+    text-align: center;
+}
+
+/* Segmentos e outros elementos */
+.ui.segment,
+.ui.placeholder.segment {
+    border-radius: 10px; 
+}
+
+/* Botões */
+.ui.button {
+    border-radius: 5px !important; 
+}

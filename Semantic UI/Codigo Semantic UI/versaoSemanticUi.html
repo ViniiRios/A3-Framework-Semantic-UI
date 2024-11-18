@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sô Agenor - Inclusão Digital</title>
+    <!-- Importação do arquivo CSS do Semantic UI -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho e menu de navegação -->
+    <header>
+        <div class="ui fixed menu gradient-menu">
+            <div class="header item">🌐 Sô Agenor</div>
+            <!-- Links que alternam entre as abas -->
+            <a class="item" onclick="mostrarAba('introducao')">Introdução</a>
+            <a class="item" onclick="mostrarAba('problemas')">Problemas</a>
+            <a class="item" onclick="mostrarAba('solucoes')">Soluções</a>
+            <a class="item" onclick="mostrarAba('simulacao')">Simulação</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="ui container">
+        <!-- Aba: Introdução -->
+        <section id="introducao" class="ui tab active">
+            <h2 class="ui header">Bem-vindo ao Sô Agenor</h2>
+            <div class="ui segment">
+                <!-- Texto explicativo sobre o Sô Agenor -->
+                <p>Sô Agenor é mais que um assistente virtual: é um aliado na inclusão digital para idosos.</p>
+                <p>Com ele, usuários enfrentam menos barreiras tecnológicas, acessam recursos digitais de forma simples e personalizada.</p>
+                <div class="ui placeholder segment center aligned" style="height: 100%;">
+                    <!-- Imagem representativa do Sô Agenor -->
+                    <img src="C:\Users\vinic\Downloads\So Agenor.png" alt="Ícone do Sô Agenor" class="ui centered image" style="max-width: 300px;">
+                    <p>Este é o Sô Agenor, seu guia na era digital.</p>
+                </div>
+        </section>
+
+        <!-- Aba: Problemas -->
+        <section id="problemas" class="ui tab">
+            <h2 class="ui header">Problemas Enfrentados</h2>
+            <div class="ui segment">
+                <!-- Lista de problemas enfrentados pelos idosos -->
+                <p>Muitos idosos enfrentam barreiras ao usar dispositivos digitais. Estas são algumas das dificuldades mais comuns:</p>
+                <div class="ui divided list">
+                    <div class="item">
+                        <i class="eye slash icon"></i>
+                        <div class="content">
+                            <div class="header">Dificuldades Visuais</div>
+                            <p>Textos pequenos, baixo contraste e ícones mal desenhados tornam a navegação desafiadora.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="hand point down outline icon"></i>
+                        <div class="content">
+                            <div class="header">Interações Confusas</div>
+                            <p>Botões pequenos e menus complexos dificultam o uso de interfaces digitais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba: Soluções -->
+        <section id="solucoes" class="ui tab">
+            <h2 class="ui header">Soluções Propostas</h2>
+            <div class="ui segment">
+                <!-- Lista de soluções propostas pelo Sô Agenor -->
+                <p>O Sô Agenor foi criado para enfrentar essas dificuldades:</p>
+                <div class="ui divided list">
+                    <div class="item">
+                        <i class="font icon"></i>
+                        <div class="content">
+                            <div class="header">Ajuste de Tamanhos</div>
+                            <p>Botões para aumentar o tamanho de textos e ícones, garantindo maior visibilidade.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="audio description icon"></i>
+                        <div class="content">
+                            <div class="header">Assistência por Áudio</div>
+                            <p>Áudio para navegação guiada, ideal para quem tem dificuldades visuais severas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aba: Simulação -->
+        <section id="simulacao" class="ui tab">
+            <h2 class="ui header">Simulação de Interface</h2>
+            <div class="ui segment center aligned">
+                <!-- Botões para interagir com o texto e ícones -->
+                <p>Veja como o Sô Agenor facilita a navegação:</p>
+                <div class="ui buttons">
+                    <button class="ui blue button" onclick="ajustarTexto('+')">Aumentar Texto</button>
+                    <button class="ui blue button" onclick="ajustarTexto('-')">Diminuir Texto</button>
+                    <button class="ui blue button" onclick="ajustarIcone('+')">Aumentar Ícone</button>
+                    <button class="ui blue button" onclick="ajustarIcone('-')">Diminuir Ícone</button>
+                </div>
+                <div class="ui segment">
+                    <!-- Elementos interativos -->
+                    <p id="texto-exemplo" style="font-size: 18px;">Texto ajustável</p>
+                    <img id="icone-exemplo" src="C:\Users\vinic\Downloads\So Agenor.png" alt="Ícone do Sô Agenor" style="width: 100px;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé fixado no final da página -->
+    <footer class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            <!-- Informações do rodapé -->
+            <p>&copy; 2024 Sô Agenor - Inclusão Digital para Todos</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

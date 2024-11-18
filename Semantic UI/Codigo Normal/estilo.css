@@ -1,0 +1,99 @@
+/* Estilo Geral */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-family: Arial, sans-serif; 
+    background: linear-gradient(to bottom, #e3f2fd, #bbdefb); 
+}
+
+/* Menu */
+.menu {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    background: linear-gradient(to right, #1e88e5, #42a5f5); 
+    padding: 10px 0; 
+    color: white;
+}
+
+/* Estilo do cabeçalho do menu */
+.menu-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Links do menu */
+.menu-item {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Conteúdo Principal */
+.container {
+    padding: 20px;
+    max-width: 800px; 
+    margin: 0 auto; 
+    flex: 1; 
+}
+
+.segment {
+    border: 1px solid #ddd; 
+    padding: 20px;
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    background: #f9f9f9; 
+}
+
+/* Define os estilos das abas */
+.tab-content {
+    display: none; 
+}
+
+.tab-content.active {
+    display: block; 
+}
+
+/* Botões */
+.botoes button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background: #1e88e5; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background: #1565c0; 
+}
+
+/* Última aba: Centralização */
+.simulacao {
+    text-align: center; 
+}
+
+.simulacao img {
+    margin-top: 20px; 
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #1565c0, #1e88e5); 
+    color: white;
+    border-radius: 10px 10px 0 0; 
+    margin-top: auto; 
+}
+
+/* Ícone */
+.icone-centralizado {
+    display: block;
+    margin: 20px auto; 
+    width: 300px;
+    height: auto;
+}
